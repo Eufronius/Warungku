@@ -1,0 +1,67 @@
+package koding;
+
+import java.util.Scanner;
+
+public class Warungku {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int pilih,jumlah,total;
+		Scanner input=new Scanner(System.in);
+		System.out.println("Silahkan Pilih Minuman");
+		System.out.println("---------------");
+		System.out.println("1. Nutrisari Jerus");
+		System.out.println("2. Es Teh");
+		System.out.println("3. Kopi Susu");
+		System.out.println("4. ABC Mocca");
+		System.out.println("5. Drink Beng-Beng");
+		System.out.println("6. Cocolatos");
+		System.out.println("7. Keluar");
+		System.out.println("----------------");
+		System.out.print("Pilih [1-7] :");
+		pilih=input.nextInt();
+		switch(pilih) {
+		case 1:
+			System.out.println("Nutrisari jeruk, beli berapa gelas =");
+			jumlah=input.nextInt();
+			total=jumlah*3000;
+			System.out.println("Nutrisari yang anda pesan seharga = Rp."+total);
+			break;
+		case 2:
+			System.out.println("Es Teh, beli berapa gelas =");
+			jumlah=input.nextInt();
+			total=jumlah*3000;
+			System.out.println("Es Teh yang anda pesan seharga = Rp."+total);
+			break;
+		case 3:
+			System.out.println("Kopi Susu, beli berapa gelas =");
+			jumlah=input.nextInt();
+			total=jumlah*4000;
+			System.out.println("Kopi Susu yang anda pesan seharga = Rp."+total);
+			break;
+		case 4:
+			System.out.println("ABC Mocca, beli berapa gelas =");
+			jumlah=input.nextInt();
+			total=jumlah*3500;
+			System.out.println("ABC Mocca yang anda pesan seharga = Rp."+total);
+			break;
+		case 5:
+			System.out.println("Drink Beng-Beng, beli berapa gelas =");
+			jumlah=input.nextInt();
+			total=jumlah*4000;
+			System.out.println("Drink Beng-Beng yang anda pesan seharga = Rp."+total);
+			break;
+		case 6:
+			System.out.println("Cocolatos, beli berapa gelas =");
+			jumlah=input.nextInt();
+			total=jumlah*3000;
+			System.out.println(" yang anda pesan seharga = Rp."+total);
+			break;
+		case 7:
+			System.out.println("Tidak jadi membeli!");
+			
+		}
+			System.out.println("Terima Kasih Telah Membeli");
+	}
+
+}
